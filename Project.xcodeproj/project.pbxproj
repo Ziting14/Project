@@ -14,6 +14,8 @@
 		3F0498F324599B35008862C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0498F124599B35008862C2 /* LaunchScreen.storyboard */; };
 		3F0498FE24599B35008862C2 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0498FD24599B35008862C2 /* ProjectTests.swift */; };
 		3F04990924599B35008862C2 /* ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04990824599B35008862C2 /* ProjectUITests.swift */; };
+		3F04991724599D06008862C2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04991624599D06008862C2 /* Login.swift */; };
+		3F0499292459A9B5008862C2 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0499282459A9B5008862C2 /* Signup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3F04990424599B35008862C2 /* ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F04990824599B35008862C2 /* ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectUITests.swift; sourceTree = "<group>"; };
 		3F04990A24599B35008862C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F04991624599D06008862C2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		3F0499282459A9B5008862C2 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				3F0498EF24599B35008862C2 /* Assets.xcassets */,
 				3F0498F124599B35008862C2 /* LaunchScreen.storyboard */,
 				3F0498F424599B35008862C2 /* Info.plist */,
+				3F04991624599D06008862C2 /* Login.swift */,
+				3F0499282459A9B5008862C2 /* Signup.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F04991724599D06008862C2 /* Login.swift in Sources */,
+				3F0499292459A9B5008862C2 /* Signup.swift in Sources */,
 				3F0498EB24599B2E008862C2 /* ViewController.swift in Sources */,
 				3F0498E924599B2E008862C2 /* AppDelegate.swift in Sources */,
 			);
