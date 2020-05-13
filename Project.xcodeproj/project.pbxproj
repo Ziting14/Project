@@ -22,7 +22,6 @@
 		3FC425702462EBBB00A3279B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4256F2462EBBB00A3279B /* CameraViewController.swift */; };
 		3FC425722462EBC900A3279B /* QRcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC425712462EBC900A3279B /* QRcodeViewController.swift */; };
 		3FC425742462EBEF00A3279B /* ContactbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC425732462EBEF00A3279B /* ContactbookViewController.swift */; };
-		3FC42576246AE54C00A3279B /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC42575246AE54C00A3279B /* apple.png */; };
 		88F0AA8BE8FE27DF511DFDE6 /* Pods_Project_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBF3D07A7D5AF5007663A38 /* Pods_Project_ProjectUITests.framework */; };
 		A77142EA2C80B43BBA579A25 /* Pods_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CECFCC421E57C875E84049 /* Pods_ProjectTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,7 +65,6 @@
 		3FC4256F2462EBBB00A3279B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		3FC425712462EBC900A3279B /* QRcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeViewController.swift; sourceTree = "<group>"; };
 		3FC425732462EBEF00A3279B /* ContactbookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactbookViewController.swift; sourceTree = "<group>"; };
-		3FC42575246AE54C00A3279B /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 		68F6DFA456235D4350CAA4D3 /* Pods-ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectTests/Pods-ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FC25598E5F7EA5A26E1353F /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		AFBF3D07A7D5AF5007663A38 /* Pods_Project_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,7 +146,6 @@
 				3FC425692462EB5500A3279B /* SignupViewController.swift */,
 				3F0498EC24599B2E008862C2 /* Main.storyboard */,
 				3F0498EF24599B35008862C2 /* Assets.xcassets */,
-				3FC42575246AE54C00A3279B /* apple.png */,
 				3F0498F124599B35008862C2 /* LaunchScreen.storyboard */,
 				3F0498F424599B35008862C2 /* Info.plist */,
 				3FC425672462EA7800A3279B /* LoginViewController.swift */,
@@ -302,7 +299,6 @@
 				3F7C15EF2462D8FC004128E1 /* GoogleService-Info.plist in Resources */,
 				3F0498F024599B35008862C2 /* Assets.xcassets in Resources */,
 				3F0498EE24599B2E008862C2 /* Main.storyboard in Resources */,
-				3FC42576246AE54C00A3279B /* apple.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
