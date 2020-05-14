@@ -168,7 +168,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbE-h2-9qq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="1353.3733133433284"/>
+            <point key="canvasLocation" x="769" y="1352"/>
+        </scene>
+        <!--addfriend-->
+        <scene sceneID="EFK-gp-ERI">
+            <objects>
+                <tableViewController title="addfriend" id="Eqo-QL-ZJ4" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2wr-8O-cnD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dZM-fM-LO1">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dZM-fM-LO1" id="Grd-YB-UlE">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Eqo-QL-ZJ4" id="wOf-jN-Se1"/>
+                            <outlet property="delegate" destination="Eqo-QL-ZJ4" id="rOd-w0-j8P"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="3sg-tz-eJ4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdl-FK-Aos" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2279" y="1352"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XKa-Zx-eXf">
+            <objects>
+                <navigationController id="ROs-ID-Skw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PMG-oR-DYU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Eqo-QL-ZJ4" kind="relationship" relationship="rootViewController" id="ZdM-Gs-13Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygl-17-CVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1542" y="1352"/>
         </scene>
         <!--signup2-->
         <scene sceneID="STT-C6-IBd">
@@ -299,13 +344,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
+                                    <action selector="signupbtn:" destination="LvK-ii-Nup" eventType="touchUpInside" id="pzk-dw-WIv"/>
                                     <segue destination="b7T-Da-AMW" kind="show" id="52s-UO-NpY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUy-I0-b9u">
+                                <rect key="frame" x="166" y="454" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99942654371261597" green="0.11807440966367722" blue="0.0015775455394759774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="taG-9F-ZX5"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="6pi-fP-5mw" id="r0d-fm-Ih7"/>
+                        <outlet property="errormessange" destination="qUy-I0-b9u" id="F1b-xX-cV3"/>
+                        <outlet property="password" destination="QcR-je-bJH" id="CW0-3i-IU4"/>
+                        <outlet property="phoneNumber" destination="uFt-1J-OJL" id="l0D-kq-dVs"/>
+                        <outlet property="singup" destination="OUE-Qk-ifq" id="Mx5-Gz-5lb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRc-YS-dpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
