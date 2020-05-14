@@ -35,9 +35,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="button_login" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4z-wh-nH5">
-                                <rect key="frame" x="173" y="359" width="138" height="115"/>
+                                <rect key="frame" x="173" y="359" width="45" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="LOGIN" backgroundImage="apple"/>
+                                <state key="normal" title="LOGIN"/>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s0j-wu-HZc"/>
                                     <segue destination="acG-tQ-Ek7" kind="show" id="TGr-DY-3eG"/>
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-194.40000000000001" y="-242.42878560719643"/>
+            <point key="canvasLocation" x="-193" y="-242"/>
         </scene>
         <!--qrcode-->
         <scene sceneID="IAx-dJ-WuR">
@@ -168,52 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbE-h2-9qq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="769" y="1352"/>
-        </scene>
-        <!--addfriend-->
-        <scene sceneID="EFK-gp-ERI">
-            <objects>
-                <tableViewController title="addfriend" id="Eqo-QL-ZJ4" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2wr-8O-cnD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dZM-fM-LO1">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dZM-fM-LO1" id="Grd-YB-UlE">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Eqo-QL-ZJ4" id="wOf-jN-Se1"/>
-                            <outlet property="delegate" destination="Eqo-QL-ZJ4" id="rOd-w0-j8P"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="3sg-tz-eJ4"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tdl-FK-Aos" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2279" y="1352"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="XKa-Zx-eXf">
-            <objects>
-                <navigationController id="ROs-ID-Skw" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PMG-oR-DYU">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Eqo-QL-ZJ4" kind="relationship" relationship="rootViewController" id="ZdM-Gs-13Q"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ygl-17-CVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1542" y="1352"/>
+            <point key="canvasLocation" x="932" y="1353.3733133433284"/>
         </scene>
         <!--signup2-->
         <scene sceneID="STT-C6-IBd">
@@ -641,9 +596,6 @@
             <point key="canvasLocation" x="-7.2000000000000002" y="1352.473763118441"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="apple" width="225" height="225"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="IXv-1O-Q46"/>
     </inferredMetricsTieBreakers>
