@@ -35,9 +35,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="button_login" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4z-wh-nH5">
-                                <rect key="frame" x="173" y="359" width="45" height="39"/>
+                                <rect key="frame" x="173" y="359" width="138" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="LOGIN"/>
+                                <state key="normal" title="LOGIN" backgroundImage="apple"/>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s0j-wu-HZc"/>
                                     <segue destination="acG-tQ-Ek7" kind="show" id="TGr-DY-3eG"/>
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-193" y="-242"/>
+            <point key="canvasLocation" x="-194.40000000000001" y="-242.42878560719643"/>
         </scene>
         <!--qrcode-->
         <scene sceneID="IAx-dJ-WuR">
@@ -641,6 +641,9 @@
             <point key="canvasLocation" x="-7.2000000000000002" y="1352.473763118441"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="apple" width="225" height="225"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="IXv-1O-Q46"/>
     </inferredMetricsTieBreakers>
