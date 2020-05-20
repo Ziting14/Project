@@ -10,10 +10,19 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var emailtextfield: UITextField!
+    @IBOutlet weak var passwordtextfield: UITextField!
+    @IBOutlet weak var loginbutton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //check is not blank
+        
+        //check email&password
+        
+        //login to main page
     }
     
 

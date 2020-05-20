@@ -74,12 +74,15 @@
                     </view>
                     <connections>
                         <outlet property="account" destination="K1D-BL-jYf" id="lpE-ny-MaP"/>
+                        <outlet property="emailtextfield" destination="K1D-BL-jYf" id="nim-66-pv7"/>
+                        <outlet property="loginbutton" destination="D4z-wh-nH5" id="ORJ-9b-bHL"/>
                         <outlet property="passwordField" destination="JsY-Db-mkw" id="t2v-LW-Miv"/>
+                        <outlet property="passwordtextfield" destination="JsY-Db-mkw" id="hXb-U8-gNA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-193" y="-242"/>
+            <point key="canvasLocation" x="-466" y="-233"/>
         </scene>
         <!--qrcode-->
         <scene sceneID="IAx-dJ-WuR">
@@ -597,6 +600,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IXv-1O-Q46"/>
+        <segue reference="TGr-DY-3eG"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -30,18 +30,23 @@ class SignupViewController: UIViewController {
         return Password.evaluate(with: Password)
     }
     
-    
+    // check the fields and validate that the data is correct.
+    //If is correct, it return nil.If not, return the error message
     func validateFields() -> String? {
-        //check is empty
-        if phoneNumberinput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || emailinput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordinput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
-        {return "Please input"}
         
-        //check is password
+        //check is empty
+        if phoneNumberinput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || emailinput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordinput.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            
+            return "Please fill in all fields"
+            
+        }
+        
+        //check is password secure
         let cleanedPassword = passwordinput.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if isPasswordValid(cleanedPassword) == false{
             //password isn't secure
-            return "Your password is not secure.Please"
+            return "Your password is not secure.Please make sure your password is at least 8 characters, contains a special character and a number"
         }
         
         return nil
@@ -51,19 +56,27 @@ class SignupViewController: UIViewController {
         errormessange.text = message
         errormessange.alpha = 1
     }
+    
+    func transitiontoHome(){
+        
+    }
+    
     @IBAction func signupbtn(_ sender: Any) {
+        
+        //validate the fields
         let error = validateFields()
   
-        let email = emailinput.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        let phonenumber = phoneNumberinput.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        let password = passwordinput.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        
+        let email = emailinput.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let phonenumber = phoneNumberinput.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordinput.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+    
         if error != nil {
             showerror(error!)
         }
+        
         else{
-            Auth.auth().createUser(withEmail: <#T##String#>, password: <#T##String#>) { (result, err) in
+            //create the user
+            Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
                 //check error
                 if err != nil{
                     //an error
@@ -73,11 +86,20 @@ class SignupViewController: UIViewController {
                     //create successfully
                     let db = Firestore.firestore()
                     
-                    db.collection("user").addDocument(data: ["phonenumber":phonenumber, "email": email]){ (error) in
-                        if error != nil{
-                            self.showerror("error")
-                        }
+                    db.collection("user").document(result!.user.uid).collection("account").addDocument(data: ["phone":phonenumber, "email": email,"uid":result!.user.uid]){
+                        (error) in
+                            if error != nil{
+                               self.showerror("error!!!!!!!!!")
+                            }
                     }
+                    
+//                    db.collection("user").addDocument(data: ["phonenumber":phonenumber, "email": email]){ (error) in
+//                        if error != nil{
+//                            self.showerror("error")
+//                        }
+//                    }
+                    //transition to the home screen
+                    self.transitiontoHome()
                 }
             }
         }
