@@ -7,11 +7,27 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import Firebase
+import FirebaseAuth
+import FirebaseFirestore
 
 class QRcodeViewController: UIViewController {
-
+    
+    var fireUploadDic: [String:Any]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*
+        let db = Firestore.firestore()
+        db.collection("user").document("Kelly").getDocuments{(document, error) in
+            if let document = document, document.exists{
+                print(document.documentID,document.Data())
+             }else{
+                print("Document does not exists)
+             }
+         }
+        */
 
         // Do any additional setup after loading the view.
     }
