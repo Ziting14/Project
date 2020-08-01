@@ -10,6 +10,7 @@ target 'Project' do
   pod 'Firebase/Storage'
   pod 'Firebase/Firestore'
   # Pods for Project
+  pod 'SideMenu'
 
   target 'ProjectTests' do
     inherit! :search_paths
