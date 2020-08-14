@@ -16,6 +16,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     @IBOutlet weak var front: UIButton!
     @IBOutlet weak var flash: UIButton!
     
+
     var captureSession: AVCaptureSession?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var frontCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front)
@@ -50,9 +51,9 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             
         }
         
+       
     }
     
-
     
     
     func switchToFrontCamera() {

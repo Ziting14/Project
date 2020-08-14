@@ -20,7 +20,7 @@
 		3F5E4F5B24D1AC3300D1240A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E4F5A24D1AC3200D1240A /* Main.storyboard */; };
 		3F5E4F5D24D1B0F600D1240A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E4F5C24D1B0F600D1240A /* GoogleService-Info.plist */; };
 		3F5E4F5F24D1B14800D1240A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E4F5E24D1B14800D1240A /* LaunchScreen.storyboard */; };
-		3F5E4F6124D1B4B500D1240A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E4F6024D1B4B400D1240A /* MenuViewController.swift */; };
+		3FAE9AEF24DBECA20011F01C /* ShowphotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE9AEE24DBECA00011F01C /* ShowphotoViewController.swift */; };
 		3FC425682462EA7800A3279B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC425672462EA7800A3279B /* LoginViewController.swift */; };
 		3FC4256A2462EB5500A3279B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC425692462EB5500A3279B /* SignupViewController.swift */; };
 		3FC4256C2462EB9500A3279B /* Signup2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4256B2462EB9500A3279B /* Signup2ViewController.swift */; };
@@ -69,7 +69,7 @@
 		3F5E4F5A24D1AC3200D1240A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		3F5E4F5C24D1B0F600D1240A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F5E4F5E24D1B14800D1240A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../../.Trash/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3F5E4F6024D1B4B400D1240A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3FAE9AEE24DBECA00011F01C /* ShowphotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowphotoViewController.swift; sourceTree = "<group>"; };
 		3FC425672462EA7800A3279B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FC425692462EB5500A3279B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; tabWidth = 3; };
 		3FC4256B2462EB9500A3279B /* Signup2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup2ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +153,7 @@
 		3F0498E724599B2E008862C2 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				3FAE9AF024DC50D20011F01C /* Controller */,
 				3F5E4F5C24D1B0F600D1240A /* GoogleService-Info.plist */,
 				3F0498E824599B2E008862C2 /* AppDelegate.swift */,
 				3FC425692462EB5500A3279B /* SignupViewController.swift */,
@@ -171,7 +172,7 @@
 				3F1E502024C2B8F800E26E58 /* AddressDetailTableViewCell.swift */,
 				3F1E501C24C19E2E00E26E58 /* AddressViewController.swift */,
 				3F1E501E24C1DDE000E26E58 /* AddressDetailViewController.swift */,
-				3F5E4F6024D1B4B400D1240A /* MenuViewController.swift */,
+				3FAE9AEE24DBECA00011F01C /* ShowphotoViewController.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -192,6 +193,13 @@
 				3F04990A24599B35008862C2 /* Info.plist */,
 			);
 			path = ProjectUITests;
+			sourceTree = "<group>";
+		};
+		3FAE9AF024DC50D20011F01C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		DA300C5921B1E4AB85E98A7F /* Frameworks */ = {
@@ -449,9 +457,9 @@
 				3FC4256E2462EBAC00A3279B /* SignupcameraViewController.swift in Sources */,
 				3F1E502124C2B8F900E26E58 /* AddressDetailTableViewCell.swift in Sources */,
 				3FC425682462EA7800A3279B /* LoginViewController.swift in Sources */,
+				3FAE9AEF24DBECA20011F01C /* ShowphotoViewController.swift in Sources */,
 				3F1E501D24C19E2E00E26E58 /* AddressViewController.swift in Sources */,
 				3FC4256C2462EB9500A3279B /* Signup2ViewController.swift in Sources */,
-				3F5E4F6124D1B4B500D1240A /* MenuViewController.swift in Sources */,
 				3FC4256A2462EB5500A3279B /* SignupViewController.swift in Sources */,
 				3F182CC824D4551E001E5D37 /* WatchPhotoViewController.swift in Sources */,
 				3F0498E924599B2E008862C2 /* AppDelegate.swift in Sources */,
