@@ -11,36 +11,119 @@ import FirebaseDatabase
 import Firebase
 import FirebaseAuth
 import FirebaseFirestore
+import FirebaseStorage
 
-class QRcodeViewController: UIViewController {
-    
+let db = Firestore.firestore()
+
+
+class QRcodeViewController: BaseViewController{
+
+    var dataTask: URLSessionDataTask?
+    var userData = UserDefaults.standard.dictionary(forKey: "userData")
     var fireUploadDic: [String:Any]?
+    
+    @IBOutlet weak var logout: UIButton!
+    @IBOutlet weak var qrcodeimgview: UIImageView!
+    var qrcodeImage: CIImage!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
-        let db = Firestore.firestore()
-        db.collection("user").document("Kelly").getDocuments{(document, error) in
-            if let document = document, document.exists{
-                print(document.documentID,document.Data())
-             }else{
-                print("Document does not exists)
-             }
-         }
-        */
+        addSlideMenuButton()
 
-        // Do any additional setup after loading the view.
+        generateQRcode()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //產生QR code
+    func generateQRcode (){
+        let userID = Auth.auth().currentUser?.uid
+        if qrcodeImage == nil {
+            
+            if userID == "" {
+                return
+            }
+            
+            let qrdata = "abc\(userID!)"
+            
+            let data = qrdata.data(using: String.Encoding.isoLatin1, allowLossyConversion: false)
+            
+            let filter = CIFilter(name: "CIQRCodeGenerator")
+            
+            filter?.setValue(data, forKey: "inputMessage")
+            filter?.setValue("Q", forKey: "inputCorrectionLevel")
+            
+            qrcodeImage = filter?.outputImage
+            
+            qrcodeimgview.image = UIImage(ciImage: qrcodeImage)
+            displayQRCodeImage()
+        }
     }
-    */
-
+    // 顯示QR code
+    func displayQRCodeImage() {
+        let scaleX = qrcodeimgview.frame.size.width / qrcodeImage.extent.size.width
+        let scaleY = qrcodeimgview.frame.size.height / qrcodeImage.extent.size.height
+        
+        let transformedImage = qrcodeImage.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
+        qrcodeimgview.image = UIImage(ciImage: transformedImage)
+        
+        
+    }
+    
+        
+//    func setPhoto(_ userImageURL: String) {
+//        if userImageURL != "none" {
+//            let session = URLSession.shared
+//            dataTask = session.dataTask(with: URL(string: userImageURL)!, completionHandler: {
+//                (data, response, error) in
+//                if let error = error {
+//                    print("\(error.localizedDescription)")
+//                    return
+//                } else if let httpResponse = response as? HTTPURLResponse {
+//                    // storage 的權限如果沒有打開的話，會出現 403 的錯誤
+//                    if httpResponse.statusCode == 200 {
+//                        DispatchQueue.main.async() {
+//                            if let data = data {
+//                                self.qrcodeimgview.image = UIImage(data: data)
+//                            }
+//                        }
+//                    }
+//                }
+//            })
+//        }
+//        dataTask?.resume()
+//    }
+    
+    
+    @IBAction func logoutaction(_ sender: Any) {
+        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        
+        let loginViewController = self.storyboard!.instantiateViewController(withIdentifier: "login")
+        UIApplication.shared.keyWindow?.rootViewController = loginViewController
+    }
+    
+    
+    func didSelectMenuItem(named: String) {
+        if named == "log out"{
+//            self.dismiss(animated: true, completion: nil)
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "home")
+//            self.present(vc!, animated: true, completion: nil)
+            let firebaseAuth = Auth.auth()
+            do {
+                try firebaseAuth.signOut()
+            } catch let signOutError as NSError {
+                print ("Error signing out: %@", signOutError)
+            }
+            
+            let loginViewController = self.storyboard!.instantiateViewController(withIdentifier: "login")
+            UIApplication.shared.keyWindow?.rootViewController = loginViewController
+        }
+    }
 }
+
