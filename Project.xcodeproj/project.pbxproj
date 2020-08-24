@@ -12,7 +12,6 @@
 		3F0498F024599B35008862C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0498EF24599B35008862C2 /* Assets.xcassets */; };
 		3F0498FE24599B35008862C2 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0498FD24599B35008862C2 /* ProjectTests.swift */; };
 		3F04990924599B35008862C2 /* ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04990824599B35008862C2 /* ProjectUITests.swift */; };
-		3F182CC824D4551E001E5D37 /* WatchPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F182CC724D4551E001E5D37 /* WatchPhotoViewController.swift */; };
 		3F1E501B24C19CCA00E26E58 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E501A24C19CCA00E26E58 /* CellTableViewCell.swift */; };
 		3F1E501D24C19E2E00E26E58 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E501C24C19E2E00E26E58 /* AddressViewController.swift */; };
 		3F1E502124C2B8F900E26E58 /* AddressDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E502024C2B8F800E26E58 /* AddressDetailTableViewCell.swift */; };
@@ -20,14 +19,13 @@
 		3F5E4F5B24D1AC3300D1240A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E4F5A24D1AC3200D1240A /* Main.storyboard */; };
 		3F5E4F5D24D1B0F600D1240A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E4F5C24D1B0F600D1240A /* GoogleService-Info.plist */; };
 		3F5E4F5F24D1B14800D1240A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E4F5E24D1B14800D1240A /* LaunchScreen.storyboard */; };
-		3FAE9AEF24DBECA20011F01C /* ShowphotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE9AEE24DBECA00011F01C /* ShowphotoViewController.swift */; };
+		3FB55F2D24E85C64003E698F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB55F2C24E85C62003E698F /* MenuViewController.swift */; };
+		3FB55F2F24E85D73003E698F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB55F2E24E85D72003E698F /* BaseViewController.swift */; };
 		3FC425682462EA7800A3279B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC425672462EA7800A3279B /* LoginViewController.swift */; };
 		3FC4256A2462EB5500A3279B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC425692462EB5500A3279B /* SignupViewController.swift */; };
-		3FC4256C2462EB9500A3279B /* Signup2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4256B2462EB9500A3279B /* Signup2ViewController.swift */; };
 		3FC4256E2462EBAC00A3279B /* SignupcameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4256D2462EBAC00A3279B /* SignupcameraViewController.swift */; };
 		3FC425702462EBBB00A3279B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4256F2462EBBB00A3279B /* CameraViewController.swift */; };
 		3FC425722462EBC900A3279B /* QRcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC425712462EBC900A3279B /* QRcodeViewController.swift */; };
-		3FC425742462EBEF00A3279B /* ContactbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC425732462EBEF00A3279B /* ContactbookViewController.swift */; };
 		88F0AA8BE8FE27DF511DFDE6 /* Pods_Project_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBF3D07A7D5AF5007663A38 /* Pods_Project_ProjectUITests.framework */; };
 		A77142EA2C80B43BBA579A25 /* Pods_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CECFCC421E57C875E84049 /* Pods_ProjectTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,7 +59,6 @@
 		3F04990424599B35008862C2 /* ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F04990824599B35008862C2 /* ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectUITests.swift; sourceTree = "<group>"; };
 		3F04990A24599B35008862C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F182CC724D4551E001E5D37 /* WatchPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchPhotoViewController.swift; sourceTree = "<group>"; };
 		3F1E501A24C19CCA00E26E58 /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
 		3F1E501C24C19E2E00E26E58 /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		3F1E501E24C1DDE000E26E58 /* AddressDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailViewController.swift; sourceTree = "<group>"; };
@@ -69,14 +66,13 @@
 		3F5E4F5A24D1AC3200D1240A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		3F5E4F5C24D1B0F600D1240A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F5E4F5E24D1B14800D1240A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../../.Trash/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3FAE9AEE24DBECA00011F01C /* ShowphotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowphotoViewController.swift; sourceTree = "<group>"; };
+		3FB55F2C24E85C62003E698F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3FB55F2E24E85D72003E698F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3FC425672462EA7800A3279B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FC425692462EB5500A3279B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; tabWidth = 3; };
-		3FC4256B2462EB9500A3279B /* Signup2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup2ViewController.swift; sourceTree = "<group>"; };
 		3FC4256D2462EBAC00A3279B /* SignupcameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupcameraViewController.swift; sourceTree = "<group>"; };
 		3FC4256F2462EBBB00A3279B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		3FC425712462EBC900A3279B /* QRcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeViewController.swift; sourceTree = "<group>"; };
-		3FC425732462EBEF00A3279B /* ContactbookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactbookViewController.swift; sourceTree = "<group>"; };
 		68F6DFA456235D4350CAA4D3 /* Pods-ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectTests/Pods-ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FC25598E5F7EA5A26E1353F /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		AFBF3D07A7D5AF5007663A38 /* Pods_Project_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,24 +151,22 @@
 			children = (
 				3FAE9AF024DC50D20011F01C /* Controller */,
 				3F5E4F5C24D1B0F600D1240A /* GoogleService-Info.plist */,
+				3FB55F2E24E85D72003E698F /* BaseViewController.swift */,
 				3F0498E824599B2E008862C2 /* AppDelegate.swift */,
 				3FC425692462EB5500A3279B /* SignupViewController.swift */,
 				3F5E4F5A24D1AC3200D1240A /* Main.storyboard */,
-				3F182CC724D4551E001E5D37 /* WatchPhotoViewController.swift */,
 				3F0498EF24599B35008862C2 /* Assets.xcassets */,
 				3F5E4F5E24D1B14800D1240A /* LaunchScreen.storyboard */,
 				3F0498F424599B35008862C2 /* Info.plist */,
 				3FC425672462EA7800A3279B /* LoginViewController.swift */,
-				3FC4256B2462EB9500A3279B /* Signup2ViewController.swift */,
 				3FC4256D2462EBAC00A3279B /* SignupcameraViewController.swift */,
 				3FC4256F2462EBBB00A3279B /* CameraViewController.swift */,
 				3FC425712462EBC900A3279B /* QRcodeViewController.swift */,
-				3FC425732462EBEF00A3279B /* ContactbookViewController.swift */,
 				3F1E501A24C19CCA00E26E58 /* CellTableViewCell.swift */,
 				3F1E502024C2B8F800E26E58 /* AddressDetailTableViewCell.swift */,
 				3F1E501C24C19E2E00E26E58 /* AddressViewController.swift */,
 				3F1E501E24C1DDE000E26E58 /* AddressDetailViewController.swift */,
-				3FAE9AEE24DBECA00011F01C /* ShowphotoViewController.swift */,
+				3FB55F2C24E85C62003E698F /* MenuViewController.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -453,17 +447,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F1E502324C2D45500E26E58 /* AddressDetailViewController.swift in Sources */,
-				3FC425742462EBEF00A3279B /* ContactbookViewController.swift in Sources */,
+				3FB55F2D24E85C64003E698F /* MenuViewController.swift in Sources */,
 				3FC4256E2462EBAC00A3279B /* SignupcameraViewController.swift in Sources */,
 				3F1E502124C2B8F900E26E58 /* AddressDetailTableViewCell.swift in Sources */,
 				3FC425682462EA7800A3279B /* LoginViewController.swift in Sources */,
-				3FAE9AEF24DBECA20011F01C /* ShowphotoViewController.swift in Sources */,
 				3F1E501D24C19E2E00E26E58 /* AddressViewController.swift in Sources */,
-				3FC4256C2462EB9500A3279B /* Signup2ViewController.swift in Sources */,
 				3FC4256A2462EB5500A3279B /* SignupViewController.swift in Sources */,
-				3F182CC824D4551E001E5D37 /* WatchPhotoViewController.swift in Sources */,
 				3F0498E924599B2E008862C2 /* AppDelegate.swift in Sources */,
 				3F1E501B24C19CCA00E26E58 /* CellTableViewCell.swift in Sources */,
+				3FB55F2F24E85D73003E698F /* BaseViewController.swift in Sources */,
 				3FC425722462EBC900A3279B /* QRcodeViewController.swift in Sources */,
 				3FC425702462EBBB00A3279B /* CameraViewController.swift in Sources */,
 			);
@@ -626,7 +618,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHH9JJ9K4N;
 				INFOPLIST_FILE = Project/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,7 +627,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -648,7 +640,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHH9JJ9K4N;
 				INFOPLIST_FILE = Project/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -657,7 +649,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
